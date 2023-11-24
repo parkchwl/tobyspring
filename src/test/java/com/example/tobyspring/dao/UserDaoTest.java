@@ -12,6 +12,10 @@ class UserDaoTest {
     public void addAndGet() throws SQLException, ClassNotFoundException {
         UserDao userDao = new UserDao();
         User user = new User();
+                user.setId("0");
+                user.setName("parkchwl");
+                user.setPassword("1234");
+
                 userDao.add(user);
     }
 }
